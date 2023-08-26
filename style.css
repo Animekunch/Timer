@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("VeraSeBd.ttf");
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(colosol.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Bitstream Vera Serif Bold;
+}
+.time {
+    height: 80px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #00264d;
+    background: transparent;
+}
+input[type] {
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    padding: 0px 17px;
+    border: none;
+    outline:auto;
+    color: #80bfff;
+    font-family: Bitstream Vera Serif Bold;
+    background: transparent;
+}
+input[type]::placeholder {
+    font-size: 50px;
+    color: #80bfff;
+}
+.button {
+    position: relative;
+    height: 80px;
+    width: 300px;
+    
+}
+.button #start {
+    height: 60px;
+    width: 360px;
+    background: #307bc6;
+    font-size: 50px;
+    color:#00264d;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    cursor: pointer;
+}
+.button  #resume, #pause {
+    height: 60px;
+    width: 180px;
+    background: #307bc6;
+    font-size: 35px;
+    color: #00264d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    visibility: hidden;
+}
+.button #resume {
+    visibility: hidden;
+    background: #307bc6;
+    border: 5px solid transparent;
+    border-color: 0px solid transparent;
+}
+.button #pause {
+    border-right:1px solid #307bc6;
+}
+.button #reset {
+    width: 130px;
+    height: 60px;
+    background: #307bc6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 35px;
+    visibility: hidden;
+    color: #00264d;
+}
+
+
